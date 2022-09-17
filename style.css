@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 5px;
+    background-color: rgb(245, 233, 247);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    grid-column: 2/12;
+    height: 10vh;
+
+}
+main{
+    border-radius: 10px;
+    background-color: whitesmoke;
+    grid-column: 2/12;
+    
+
+}
+.section-label{
+    padding-bottom: 20px;
+}
+/*resume Header*/
+.res-header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: url(/images/res-background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 30px;
+    gap: 10px;
+ 
+}
+
+
+.res-bio{
+    display: flex;
+    flex-direction: column;
+    flex-basis:auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.res-bio--name{
+    font-size: 3.5rem;
+    flex: 1 1 0px;
+    
+}
+.res-bio--paragraph, .res-bio-btnContainer{
+    flex: 1 1 0px;
+    display: flex;
+    align-items: center;
+}
+.res-bio--paragraph{
+    font-size: 1.8rem;
+}
+.res-bio-btnContainer{
+    display: flex;
+    gap: 20px;
+}
+
+
+.img{
+    height: 200px;
+    width: 250px;
+    background-color: white;
+    
+}
+
+.bio-btn{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+#download-btn{
+    width: 120px;
+
+}
+#hire-tag{
+    width: 100px;
+}
+
+
+
+/* about section*/
+.about{
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    border-bottom: 1px solid grey;
+}
+.summary, .info{
+    flex: 1 1 0px;
+}
+.summary h2{
+   padding-bottom: 20px;
+}
+.info-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 5px;
+}
+
+.center-list{
+    justify-self: center;
+}
+
+
+
+
+/* skills */
+
+.skills-section{
+    
+    padding: 30px;
+    border-bottom: 1px solid grey;
+
+}
+.skill{
+    width: 50px;
+    height: auto;
+    justify-self: center;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.skill-svgs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
+    
+}
+.skill-list,.learn-list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.skills,.learn-skills{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+.skills li ,.learn-skills li{
+    flex: 1 1 0px;
+}
+
+
+
+
+/*Work XP*/
+
+.work-experience{
+    padding: 30px;
+    border-bottom: 1px solid grey;
+}
+.work-card-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid violet;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    row-gap: 20px;
+}
+.work-card{
+    border-left: 3px solid rgb(78, 143, 240);
+    box-shadow: 0 0 3px purple;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.connection{
+    padding-top: 20px;
+}
+span{
+    color:grey;
+}
+
+
+
+
+.projects{
+    
+}
+/*media Queries */
+
+@media screen and (max-width:1500px){
+    header{
+        grid-column: 3/11;
+    }
+    main{
+        grid-column: 3/11;
+    }
+
+}
