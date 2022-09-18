@@ -39,7 +39,7 @@ main{
 .res-header{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-image: url(./images/res-background.jpg);
+    background-image: url("./images/res-background.jpg");
     background-position: center;
     background-size: cover;
     color: white;
