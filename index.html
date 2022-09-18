@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -27,7 +30,7 @@
             <p class="res-bio--paragraph">Web Developer</p>
             <div class="res-bio-btnContainer">
                 <button type="button" id="download-btn" class="bio-btn">Download CV</button>
-                <button type="button" id="hire-tag" class="bio-btn">Hire Me</button>
+                <a href="#contact" class="contact-tag">Contact</a>
             </div>
         </div>
     </section>
@@ -131,12 +134,77 @@
            </div>
     </section>
     <section class="projects">
-        <h2>Recent Projects</h2>
-
-
-
+        <h2 class="section-label">Recent Projects</h2>
+        <div class="project-card-container">
+            <div class="project-card">
+                <h3>Production Manager</h3>
+                <img src="/images/tictac.png" alt="Production Manager" class="proj-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, eaque!</p>
+                <div class="project-links">
+                    <a class= "proj-link" href="https://gcamaci.github.io/Tic-Tac-Toe/" target="_blank"><img class="proj-icon" src="/images/view.png"></a>
+                    <a class= "proj-link" href="https://github.com/gcamaci/Tic-Tac-Toe" target="_blank"><img class="proj-icon" src="/images/coding.png"></a>
+                </div>
+           </div>
+           <div class="project-card">
+                <h3>To-Do List</h3>
+                <img src="/images/tictac.png" alt="Todo List" class="proj-img">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptatibus!</p>
+                <div class="project-links">
+                    <a class= "proj-link" href="https://gcamaci.github.io/Tic-Tac-Toe/" target="_blank"><img class="proj-icon" src="/images/view.png"></a>
+                    <a class= "proj-link" href="https://github.com/gcamaci/Tic-Tac-Toe" target="_blank"><img class="proj-icon" src="/images/coding.png"></a>
+                </div>
+           </div>
+           <div class="project-card">
+                <h3>Tic-Tac-Toe</h3>
+                <img src="/images/tictac.png" alt="tic tac toe" class="proj-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fuga!</p>
+                <div class="project-links">
+                    <a class= "proj-link" href="https://gcamaci.github.io/Tic-Tac-Toe/" target="_blank"><img class="proj-icon" src="/images/view.png"></a>
+                    <a class= "proj-link" href="https://github.com/gcamaci/Tic-Tac-Toe" target="_blank"><img class="proj-icon" src="/images/coding.png"></a>
+                </div>
+           </div>
+           <div class="project-card">
+                <h3>Restauraunt Page</h3>
+                <img src="/images/arancini.png" alt="Restauraunt" class="proj-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, architecto!</p>
+                <div class="project-links">
+                    <a class= "proj-link" href="https://gcamaci.github.io/Arancini/"                    " target="_blank"><img class="proj-icon" src="/images/view.png"></a>
+                    <a class= "proj-link" href="https://github.com/gcamaci/Arancini" target="_blank"><img class="proj-icon" src="/images/coding.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="section-label">Contact</h2>
+        <form action="https://formsubmit.co/gcamaci83@gmail.com" method="post">
+            <label>
+                Name
+                <input type="text" name="name">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email">
+            </label>
+            <label class="tex-area">
+                Send me a message
+                <textarea id="emailContent" name="email-content" rows="4" cols="50"></textarea>
+            </label>
+            <div><button id="submit" type="submit">Send</button></div>
+        </form>
+        <div class="contact-list-container">
+            <ul class="info-list contact-list">
+                <li class="center-list">Email</li>
+                <li>gcamaci83@gmail.com</li>
+                <li class="center-list">Phone</li>
+                <li>773-220-4536</li>
+                <li class="center-list"> Address</li>
+                <li>2510 N 74th Avenue, Elmwood Park, IL</li> 
+            </ul>
+        </div>
     </section>
 </main>
-<footer></footer>
+<footer>
+    here I am 
+</footer>
 <script src="script.js"></script>
 </html>
