@@ -265,8 +265,13 @@ span{
     justify-content: flex-end;
     gap:10px;
 }
-
-
+.icon{
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+.icon:hover{
+    transform: scale(1.25);
+}
 
 form{
     display: flex;
@@ -322,6 +327,11 @@ label{
     color: white;
     font-size: 1.2rem;
     border-radius: 25px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+#submit:hover{
+    transform: scale(1.05);
 }
 /*media Queries */
 
@@ -330,6 +340,9 @@ label{
 footer{
     grid-column: 2/12;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 @media screen and (max-width:1500px){
@@ -344,4 +357,17 @@ footer{
         
     }
 
+}
+
+@media screen and (min-width:1500px){
+    header{
+        grid-column: 4/10;
+    }
+    main{
+        grid-column: 4/10;
+    }
+    footer{
+        grid-column: 4/10;
+        
+    }
 }
