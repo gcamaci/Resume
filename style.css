@@ -47,6 +47,7 @@ main{
     border-top-left-radius: 10px;
     padding: 30px;
     gap: 10px;
+    min-height: 50px;
  
 }
 
@@ -54,17 +55,34 @@ main{
 .res-bio{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     flex-basis:auto;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    padding: 10px;
 }
+.photo-header-container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.head-shot{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
+}
+
 .res-bio--name{
     font-size: 3.5rem;
-    flex: 1 1 0px;
+    
     
 }
 .res-bio--paragraph, .res-bio-btnContainer{
-    flex: 1 1 0px;
+    
     display: flex;
     align-items: center;
 }
@@ -335,7 +353,9 @@ label{
 }
 /*media Queries */
 
-
+.head-shot{
+    border-radius: 20px;
+}
 
 footer{
     grid-column: 2/12;
