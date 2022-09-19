@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 5px;
-    background-color: #daddf9;
+    background-color: #cfd1e6;
     
 }
 
@@ -84,10 +84,14 @@ main{
     background-color: rgb(228, 38, 228);
     text-align: center;
     border-radius: 25px;
+    transition: all 0.3s ease;
+    transform: scale(1)
 
 
 }
-
+.contact-tag:hover{
+    transform: scale(1.05);
+}
 
 .img{
     height: 200px;
@@ -248,6 +252,12 @@ span{
 .proj-icon{
     width: 25px;
     height: 25px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+
+}
+.proj-icon:hover{
+    transform: scale(1.25);
 
 }
 .project-links{
